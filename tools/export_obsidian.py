@@ -138,7 +138,7 @@ def main():
         target.write_bytes(data)
     manifest = {'format': 1, 'source': 'Obsidian: только читательский курс', 'documents': len(config['documents']),
                 'lessons': len(config['lessons']), 'files': {key: digest(value) for key, value in sorted(pending.items())}}
-    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    manifest_path.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + '\n', encoding='utf-8', newline='\n')
     print('Выгружено:', len(config['documents']), 'страниц,', len(config['lessons']), 'архивов уроков,',
           len(config['tracks']), 'готовых скилла,', len(assets), 'анимаций и картинок')
 
