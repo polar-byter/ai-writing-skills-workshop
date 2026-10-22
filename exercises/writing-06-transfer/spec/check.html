@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Проверка ТЗ</title>
+  <style>
+    body{font:18px/1.5 "Segoe UI",sans-serif;background:#f4f1ea;color:#2b2a33;margin:0;padding:24px}
+    main{max-width:720px;margin:0 auto;background:#fffdf8;padding:28px;border-radius:12px;border:1px solid #e2dccd}
+    h1{font-size:28px;margin:0 0 8px} p{margin:10px 0}
+    textarea{box-sizing:border-box;width:100%;font:17px/1.5 Consolas,monospace;min-height:230px;padding:12px;border:1px solid #c9c1ad;border-radius:6px;margin-top:6px}
+    button{background:#7a3e2a;color:white;font:inherit;padding:10px 24px;border:0;border-radius:6px;cursor:pointer;margin-top:12px}
+    input{font:inherit;max-width:100%} .note{color:#5d5a52;font-size:16px} #status{font-weight:600}
+    li{margin:4px 0}
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Проверка ТЗ</h1>
+    <p>Скрипт отмечает слова, которые каждый поймёт по-своему. Придуманные факты он не видит.</p>
+    <p><label for="file">Выберите файл ответа</label><br><input id="file" type="file" accept=".md,.txt,text/plain,text/markdown"></p>
+    <label for="text">или вставьте текст сюда:</label>
+    <textarea id="text" spellcheck="false"></textarea>
+    <button id="check" type="button">Проверить</button>
+    <p id="status" role="status" aria-live="polite">Текст ещё не проверен.</p>
+    <ul id="results"></ul>
+    <p class="note">Файлы не изменяются. Каждая находка - повод перечитать место, а не ошибка.</p>
+  </main>
+  <script src=".opencode/skills/clear-spec/scripts/check.js"></script>
+</body>
+</html>
