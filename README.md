@@ -42,6 +42,6 @@
 <details>
 <summary>Для сопровождения курса</summary>
 
-[Правила редактирования](AGENTS.md) / [Сборка и выгрузка](maintainer/README.md) / [Журнал работы](maintainer/WORK_LOG.md)
+[Сборка и выгрузка](maintainer/README.md)
 
 </details>
